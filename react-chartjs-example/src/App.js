@@ -3,6 +3,8 @@ import { CategoryScale } from 'chart.js';
 import { useState } from 'react';
 import { Data } from './Data';
 import PieChart from './components/PieChart';
+import LineChart from "./components/LineChart";
+import BarChart from "./components/BarChart";
 
 Chart.register(CategoryScale);
 
@@ -28,6 +30,8 @@ export default function App() {
   return (
     <div className="App">
       <PieChart chartData={chartData}/>
+      <LineChart chartData={chartData}/>
+      <BarChart chartData={chartData}/>
     </div>
   );
 }
