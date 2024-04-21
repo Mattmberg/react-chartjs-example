@@ -113,8 +113,6 @@ export default function App() {
     ]    
   }
 
-
-
   return (
     <div className="App">
       <PieChart chartData={chartData}/>
@@ -123,7 +121,7 @@ export default function App() {
       {data.pokemon.length}
       <PieChart chartData={ChartData}/>
       <LineChart chartData={ChartData}/>
-  <BarChart chartData={ChartData}/>
+      <BarChart chartData={ChartData}/>
     </div>
   );
 }
